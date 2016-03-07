@@ -2,7 +2,7 @@ var expect = chai.expect;
 // var should = chai.should();
 
 // sample!
-describe('Compare Numbers', function() {
+describe('Letter Grader', function() {
   it('should convert a grade between 90 and 100 inclusive to an A', function() {
     expect(letterGrader(95)).to.equal('A');
   });
@@ -17,5 +17,11 @@ describe('Compare Numbers', function() {
   });
   it('should convert a grade between 0 and 59 inclusive to an F', function() {
     expect(letterGrader(55)).to.equal('F');
+  });
+});
+
+describe('Average Scores', function() {
+  it('should return the mean of the scores in an array', function() {
+    expect(averageScores([90, 95, 87, 60])).to.equal(83);
   });
 });

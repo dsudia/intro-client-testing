@@ -11,3 +11,12 @@ function letterGrader (score) {
     return 'F';
   }
 }
+
+function averageScores (array) {
+  var sum = 0;
+  array.forEach(function(el) {
+    sum += el;
+  });
+  var mean = sum/(array.length);
+  return mean;
+}
