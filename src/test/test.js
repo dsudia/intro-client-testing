@@ -25,3 +25,9 @@ describe('Average Scores', function() {
     expect(averageScores([90, 95, 87, 60])).to.equal(83);
   });
 });
+
+describe('Median Score', function() {
+  it('should return the median of the scores in an array', function() {
+    expect(medianScore([52, 80, 80, 86, 94])).to.equal(80);
+  });
+});
