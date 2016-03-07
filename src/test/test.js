@@ -10,12 +10,12 @@ describe('Compare Numbers', function() {
     expect(letterGrader(85)).to.equal('B');
   });
   it('should convert a grade between 70 and 79 inclusive to a C', function() {
-    expect(letterGrader(85)).to.equal('C');
+    expect(letterGrader(75)).to.equal('C');
   });
   it('should convert a grade between 60 and 69 inclusive to a D', function() {
-    expect(letterGrader(85)).to.equal('B');
+    expect(letterGrader(65)).to.equal('D');
   });
   it('should convert a grade between 0 and 59 inclusive to an F', function() {
-    expect(letterGrader(85)).to.equal('F');
+    expect(letterGrader(55)).to.equal('F');
   });
 });
