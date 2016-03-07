@@ -34,3 +34,9 @@ describe('Median Score', function() {
     expect(medianScore([52, 80, 80, 82, 86, 94])).to.equal(81);
   });
 });
+
+describe('Mode Score', function() {
+  it('should return the mode of scores in an array', function() {
+    expect(modeScore([82, 92, 75, 91, 92, 89, 95, 100, 86])).to.equal(92);
+  });
+});
