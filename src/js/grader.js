@@ -20,3 +20,14 @@ function averageScores (array) {
   var mean = sum/(array.length);
   return mean;
 }
+
+function medianScore (array) {
+  var sortedArray = array.sort();
+  if (array.length % 2 !== 0) {
+    return (array[Math.floor(array.length / 2)]);
+  } else if (array.length % 2 === 0) {
+    var middleLeft = (array.length /2 - 1);
+    var middleRight = (array.length/2);
+    return ((array[middleLeft] + array[middleRight]) / 2);
+  }
+}

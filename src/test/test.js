@@ -27,7 +27,10 @@ describe('Average Scores', function() {
 });
 
 describe('Median Score', function() {
-  it('should return the median of the scores in an array', function() {
+  it('should return the median of the scores in an array with an odd number of elements', function() {
     expect(medianScore([52, 80, 80, 86, 94])).to.equal(80);
+  });
+  it('should return the median of the scores in an array with an even number of elements', function() {
+    expect(medianScore([52, 80, 80, 82, 86, 94])).to.equal(81);
   });
 });
